@@ -1,4 +1,3 @@
-// CrapPlayer.h
 
 #ifndef CRAPPLAYER_H
 #define CRAPPLAYER_H
