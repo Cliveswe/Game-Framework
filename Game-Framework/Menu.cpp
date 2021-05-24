@@ -50,6 +50,14 @@ void Menu::setPrompt(string prompt){
 }
 
 /// <summary>
+/// Get the prompt.
+/// </summary>
+/// <returns>The prompt text as a string.</returns>
+string Menu::getPrompt()const {
+	string res = _prompt;
+	return res;
+}
+/// <summary>
 /// Display the title.
 /// </summary>
 void Menu::displayTitle(){

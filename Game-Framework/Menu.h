@@ -67,6 +67,12 @@ public:
 	void setPrompt(string prompt);
 
 	/// <summary>
+	/// Get the prompt.
+	/// </summary>
+	/// <returns>The prompt text as a string.</returns>
+	string getPrompt()const;
+
+	/// <summary>
 	/// Display the prompt.
 	/// </summary>
 	void displayPrompt();
