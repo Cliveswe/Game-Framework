@@ -3,7 +3,8 @@
 * File: Menu.cpp
 * Date: 2021-04-15
 *
-* Summary: This is a reusable menu. The menu has a title. You can choose to have the title combined
+* Summary:
+* This is a reusable menu. The menu has a title. You can choose to have the title combined
 * with a delimiter below it. The rest of the menu is a vector of strings. The vector position 0, is
 * reserved for a menu items title. This title can be used as an instruction on how to use the menu
 * items.
