@@ -39,6 +39,15 @@
     <ClCompile Include="SlotAndBet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CrapGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CrapPlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IGame.h">
@@ -66,6 +75,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SlotAndBet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CrapGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CrapPlayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wrapper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -140,6 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ApplicationInstructions.cpp" />
+    <ClCompile Include="CrapGame.cpp" />
+    <ClCompile Include="CrapPlayer.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="RouletteBet.cpp" />
@@ -147,9 +149,12 @@
     <ClCompile Include="RoulettePlayer.cpp" />
     <ClCompile Include="SlotAndBet.cpp" />
     <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="Wrapper.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ApplicationInstructions.h" />
+    <ClInclude Include="CrapGame.h" />
+    <ClInclude Include="CrapPlayer.h" />
     <ClInclude Include="IGame.h" />
     <ClInclude Include="IPlayer.h" />
     <ClInclude Include="Menu.h" />
@@ -158,6 +163,7 @@
     <ClInclude Include="RoulettePlayer.h" />
     <ClInclude Include="SlotAndBet.h" />
     <ClInclude Include="Utils.h" />
+    <ClInclude Include="Wrapper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
