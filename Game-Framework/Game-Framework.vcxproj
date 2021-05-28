@@ -142,9 +142,10 @@
     <ClCompile Include="ApplicationInstructions.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="RoulettBet.cpp" />
+    <ClCompile Include="RouletteBet.cpp" />
     <ClCompile Include="RouletteGame.cpp" />
     <ClCompile Include="RoulettePlayer.cpp" />
+    <ClCompile Include="SlotAndBet.cpp" />
     <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -152,9 +153,10 @@
     <ClInclude Include="IGame.h" />
     <ClInclude Include="IPlayer.h" />
     <ClInclude Include="Menu.h" />
-    <ClInclude Include="RoulettBet.h" />
+    <ClInclude Include="RouletteBet.h" />
     <ClInclude Include="RouletteGame.h" />
     <ClInclude Include="RoulettePlayer.h" />
+    <ClInclude Include="SlotAndBet.h" />
     <ClInclude Include="Utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
