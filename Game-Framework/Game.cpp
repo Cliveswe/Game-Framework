@@ -21,15 +21,15 @@ private:
 };
 
 int App::run(){
-	
+
 	if(!_player->setGame(_game)){
 		delete _player;
 		delete _game;
 		return 1;
 	}
-	
+
 	_player->play(AppInc.getNumberOfRounds());
-	cout << "After " << _player->getBetCount() << " number of rounds, the player has " << _player->getMoney() << " SEK left!" << endl;
+	cout << endl << "After " << _player->getBetCount() << " number of rounds, the player has " << _player->getMoney() << " SEK left!" << endl;
 
 	return 0;
 }
@@ -38,7 +38,7 @@ int main(){
 
 	do{
 		int ctr = AppInc.gatherData();
-		
+
 		if(ctr == 1){
 			return 0;
 
@@ -53,7 +53,7 @@ int main(){
 
 	if(AppInc.canPlayGame()){
 
-		
+
 		player = new RoulettePlayer(AppInc.getBankroll()); // Start with a player that has 1000 Kr
 		game = new RouletteGame();
 
