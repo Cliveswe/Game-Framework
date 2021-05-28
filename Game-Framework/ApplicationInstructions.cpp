@@ -77,7 +77,7 @@ void ApplicationInstructions::setMenu(){
 /// Gather data from the user. Start by displaying a menu of choices and prompt for a choice. After a valid 
 /// choice has been selected it is then executed.
 /// </summary>
-/// <returns>1 end the game, -1 as for a new choice, 0 to continue as type int.</returns>
+/// <returns>1 end the game, -1 ask for a new choice, 0 to continue as type int.</returns>
 int ApplicationInstructions::gatherData(){
 	int choice = 0;
 	bool ans = false;
