@@ -3,6 +3,7 @@
 
 #include "IGame.h"
 
+
 class IPlayer{
 public:
 	virtual bool setGame(IGame* game) = 0;		// Gives the player a game object to use
