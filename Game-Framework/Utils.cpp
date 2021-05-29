@@ -41,3 +41,14 @@ int Utils::getInputInt(const char* msg, const char* errMsg){
 
 	return stoi(input);
 }
+
+/// <summary>
+/// Generate a random within a range. Make sure that the generator is seeded first.
+/// </summary>
+/// <param name="min">Range lowest number as type int.</param>
+/// <param name="max">Range highest number as type int.</param>
+/// <returns>A number in the range min to max as type int.</returns>
+int Utils::randomNumberGenerator(const int min, const int max){
+
+	return min + rand() % ((max + 1) - min);
+}
