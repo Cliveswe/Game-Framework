@@ -64,7 +64,7 @@ void ApplicationInstructions::createGameMenu(){
 /// </summary>
 void ApplicationInstructions::setMenu(){
 
-	menu->setTitle("Roulette");
+	menu->setTitle("Game");
 	menu->setPrompt("Enter your choice: ");
 	menu->setMenuItemsTitle("In order to play the game, menu item 3, you first must enter data in menu items 1 & 2!");
 	menu->addMenuItem(applicationMenuItems[BANKROLL]);
