@@ -12,6 +12,8 @@
 #include "RouletteGame.h"
 
 RouletteGame::RouletteGame(){
+	/*Seed the random generator with time(0) the number of ticks since Jan 1, 1970 UTC*/
+	srand(time(0));
 }
 
 RouletteGame::~RouletteGame(){
@@ -42,7 +44,7 @@ int RouletteGame::play(char* bet, int amount){
 	//Check if the player placed a bet on the winning slot.
 	if(rb->getSlotBet(rouletteNr) > 0){
 
-		payout += rb->getSlotBet(rouletteNr) * SINGLE_NUMBER;//Calculate the winnings.
+		payout += rb->getSlotBet(rouletteNr) * SINGLE_NUMBER_MULTIPLIER;//Calculate the winnings.
 	}
 
 	//Check if the player paced a bet on a slot colour i.e. red or black.
@@ -52,7 +54,7 @@ int RouletteGame::play(char* bet, int amount){
 	}
 
 	//Display all the bets made by the player.
-	cout << endl << rb <<endl;
+	cout << endl << rb << endl;
 
 	return payout;
 }
@@ -62,10 +64,8 @@ int RouletteGame::play(char* bet, int amount){
 /// </summary>
 /// <returns>A random number as type int.</returns>
 int RouletteGame::rouletteNumber(){
-	/*Seed the random generator with time(0)
-	the number of ticks since Jan 1, 1970 UTC*/
-	srand(time(0));
-	return rand() % HIGHEST_SLOT + 1;
+
+	return Utils::randomNumberGenerator(LOWEST_SLOT, HIGHEST_SLOT);
 }
 
 /// <summary>
@@ -94,7 +94,7 @@ void RouletteGame::printSlotColourAsText(int slot)const{
 /// </summary>
 /// <param name="rouletteNr">The slot number as type int.</param>
 /// <returns>The colour code for black or red as type int.</returns>
-int RouletteGame::getSlotColour(int rouletteNr)const {
+int RouletteGame::getSlotColour(int rouletteNr)const{
 	//Even numbers are Black.
 	if((rouletteNr % 2) == 0){
 		return BLACK;

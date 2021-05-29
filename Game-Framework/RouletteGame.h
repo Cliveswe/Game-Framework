@@ -15,6 +15,7 @@
 #include "IGame.h"
 #include "RouletteBet.h"
 #include "Menu.h"
+#include "Utils.h"
 using std::cin;
 #include <ctime>
 using std::time;
@@ -28,7 +29,7 @@ using std::time;
 class RouletteGame : public IGame{
 private:
 	static const int GAME_ID = 12345;
-	static const int SINGLE_NUMBER = 35;
+	static const int SINGLE_NUMBER_MULTIPLIER = 35;//Inside slot bet multiplier.
 	static const int BLACK_RED = 2;
 
 	/// <summary>
@@ -53,7 +54,7 @@ private:
 public:
 	/*None is 0 RED R = 18, E = 5 & D = 4 RED = 1854
 	BLACK B = 2, L = 12, A = 1, C = 3 & K = 11 BLACK = 2121311 */
-	static enum SLOT_COLOURS{ NONE = 0, RED = 1854, BLACK = 2121311 };
+	enum SLOT_COLOURS{ NONE = 0, RED = 1854, BLACK = 2121311 };
 	static const int LOWEST_SLOT = 0;//0 is the lowest slot number on the roulette wheel.
 	static const int HIGHEST_SLOT = 36;//0 is the highest slot number on the roulette wheel.
 
