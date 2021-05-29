@@ -482,7 +482,9 @@ bool RoulettePlayer::setSlots(int* slot, int* bet){
 
 		} else{
 
-			cout << "Your bet =  " << *bet << " SEK is too big. Your bankroll is " << getMoney() << " SEK" << endl;
+			cout << "Your bet =  " << *bet << " SEK is too ";
+			(*bet < 1) ? cout << "small" : cout << "big";
+			cout << ". Your bankroll is " << getMoney() << " SEK" << endl;
 		}
 	} else{
 
@@ -498,10 +500,10 @@ bool RoulettePlayer::setSlots(int* slot, int* bet){
 /// <param name="number">A number as type const int.</param>
 /// <returns>True if the number is within range otherwise false.</returns>
 bool RoulettePlayer::isSlotNumberValid(const int number)const{
-	
+
 	if((number >= RouletteGame::LOWEST_SLOT) &&
 		(number <= RouletteGame::HIGHEST_SLOT)){
-	
+
 		return true;
 	}
 
@@ -514,8 +516,10 @@ bool RoulettePlayer::isSlotNumberValid(const int number)const{
 /// <param name="amount">A bet as type const int.</param>
 /// <returns></returns>
 bool RoulettePlayer::isSlotBetAmountValid(const int amount)const{
-	if(canPlaceBet() && (getMoney() >= amount)){
-		return true;
+	if(amount > 0){
+		if(canPlaceBet() && (getMoney() >= amount)){
+			return true;
+		}
 	}
 	return false;
 }
