@@ -100,7 +100,7 @@ public:
 	int getBetTotal()const;
 	
 	/// <summary>
-		/// Format the class data for printing. Think of this method as a toSting() method in for example Java.
+	/// Format the class data for printing. Think of this method as a toSting() method in for example Java.
 	/// This a overloaded operator "<<".
 	/// </summary>
 	/// <param name="os">The stream to write to as type iostream.</param>
